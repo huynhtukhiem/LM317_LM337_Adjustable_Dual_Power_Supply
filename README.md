@@ -20,7 +20,7 @@ Design of a dual-polarity rectifier and linear voltage regulator circuit that ge
 
 ## Calculations
 
-1. Output voltage:
+### Output voltage
 
 ```text
 VOUT = VREF × (1 + R2/R1)
@@ -43,11 +43,30 @@ R2 = 240 × (4 − 1)
 R2 = 720 Ω
 ```
 
-### Selected Resistor Values
-
-| Component | Value |
-|----------|-------:|
-| R1 | 240 Ω |
-| R2 | 720 Ω |
+==> Selected Resistor Values:R1 = 240 Ω and R2 = 720 v.
+==> choose Variable Resistor = 1k Ω
 
 The same resistor values are used for both the **LM317** and **LM337** to obtain regulated **+5 V** and **−5 V** outputs.
+
+### LED Current Limiting Resistor
+
+The LED current limiting resistor is calculated using Ohm's law:
+
+```text
+R = (VS - VF) / IF
+```
+
+Where:
+
+- Supply Voltage (VS) = 5 V
+- LED Forward Voltage (VF) ≈ 2.0 V
+- LED Forward Current (IF) = 10 mA
+
+Calculation:
+
+```text
+R = (5 - 2) / 0.01
+
+R = 300 Ω
+```
+
