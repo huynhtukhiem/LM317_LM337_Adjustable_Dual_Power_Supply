@@ -20,45 +20,34 @@ Design of a dual-polarity rectifier and linear voltage regulator circuit that ge
 
 ## Calculations
 
-1. Ouptut Voltage:
+1. Output voltage:
 
-The output voltage of the LM317 and LM337 is determined by two resistors according to the following equation:
+```text
+VOUT = VREF × (1 + R2/R1)
+```
 
-\[
-V_{OUT}=V_{REF}\left(1+\frac{R_2}{R_1}\right)
-\]
+Where:
 
-where:
+- **VREF** = 1.25 V
+- **R1** = 240 Ω
 
-- \(V_{REF}=1.25V\)
-- \(R_1=240\Omega\)
+To obtain an output voltage of **5 V**:
 
-For a target output voltage of **5V**:
+```text
+R2 = R1 × (VOUT / VREF − 1)
 
-\[
-R_2
-=
-R_1\left(\frac{V_{OUT}}{V_{REF}}-1\right)
-\]
+R2 = 240 × (5 / 1.25 − 1)
 
-Substituting the values:
+R2 = 240 × (4 − 1)
 
-\[
-R_2
-=
-240
-\left(
-\frac{5}{1.25}-1
-\right)
-=
-720\Omega
-\]
+R2 = 720 Ω
+```
 
-Therefore, the recommended resistor values are:
+### Selected Resistor Values
 
 | Component | Value |
-|----------|-------|
+|----------|-------:|
 | R1 | 240 Ω |
 | R2 | 720 Ω |
 
-The same calculation is applied to both the **LM317** (positive regulator) and **LM337** (negative regulator), resulting in regulated **+5V** and **−5V** outputs.
+The same resistor values are used for both the **LM317** and **LM337** to obtain regulated **+5 V** and **−5 V** outputs.
