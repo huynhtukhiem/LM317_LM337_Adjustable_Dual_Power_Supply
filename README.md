@@ -26,7 +26,7 @@ Design of a dual-polarity rectifier and linear voltage regulator circuit that ge
 VOUT = VREF × (1 + R2/R1)
 ```
 
-Where:
+According to datasheet:
 
 - **VREF** = 1.25 V
 - **R1** = 240 Ω
