@@ -15,7 +15,8 @@ Design of a dual-polarity rectifier and linear voltage regulator circuit that ge
 | IC Regulators | LM317 and LM337 |
 
 ## 📌 Schematic
-<img src="Images/Schematic.jpg" width="600">
+<img src="Images/Schematic.jpg" width="900">
+
 ## 📌 3D view
 
 ## 📌 Calculations
