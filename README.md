@@ -157,6 +157,7 @@ Although the IPC-2221 calculation gives a minimum trace width of approximately *
 <img src="Images/Layout.jpg" width="900">
 
 Bottom layout:
+
 <img src="Images/Bottom.jpg" width="900">
 
 
