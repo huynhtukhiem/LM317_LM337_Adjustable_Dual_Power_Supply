@@ -8,6 +8,7 @@ Design of a dual-polarity rectifier and linear voltage regulator circuit that ge
 |-----------|-------------|
 | PCB Design Software | Altium Designer 26 |
 | PCB Layers | 1 Layers |
+| Trace width | Use IPC2221 to calculate | 
 | Size | 70 x 70 mm |
 | Input Voltage | 12V AC |
 | Output Voltage | Adjustable positive and negative 5V DC |
@@ -151,3 +152,12 @@ W ≈ 24.2 mil
 #### Selected Design Value
 
 Although the IPC-2221 calculation gives a minimum trace width of approximately **0.61 mm**, this project uses a **1.5 mm** trace width for all power traces to reduce voltage drop, improve heat dissipation, and provide additional design margin.
+
+## PCB layout
+<img src="Images/layout.jpg" width="900">
+
+Bottom layout:
+<img src="Images/Bottom.jpg" width="900">
+
+
+
