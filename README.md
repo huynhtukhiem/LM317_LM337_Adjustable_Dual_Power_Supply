@@ -19,7 +19,9 @@ Design of a dual-polarity rectifier and linear voltage regulator circuit that ge
 <img src="Images/Schematic.jpg" width="900">
 
 ## 📌 3D view
+<img src="Images/3DView.jpg" width="600">
 
+<img src="Images/3DView_2.jpg" width="600">
 
 ## 📌 Calculations
 
